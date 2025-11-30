@@ -1,0 +1,20 @@
+# config/vertex_config.yaml
+
+# === Vertex AI deployment config for CareGuide Coach ===
+
+project_id: "alien-program-478415-q3_ID"
+location: "us-central1"
+
+# You can choose any name
+agent_display_name: "CareGuide Coach - Multi-Agent Healthcare Education"
+
+# Model + engine used by the orchestrator
+model_id: "gemini-2.0-flash"
+
+# Logging & tracing (optional but nice for observability)
+enable_logging: true
+enable_tracing: true
+
+# Optional: environment variables your agent expects
+env:
+  GOOGLE_API_KEY: "${GOOGLE_API_KEY}"
